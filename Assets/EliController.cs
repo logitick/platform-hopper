@@ -78,6 +78,7 @@ public class EliController : MonoBehaviour {
 	{	
 
 		if (IsGrounded() && animator.GetBool ("Jump")) {
+			this.audio.Play();
 			rigidbody2D.AddForce(jumpForce);
 		}
 
